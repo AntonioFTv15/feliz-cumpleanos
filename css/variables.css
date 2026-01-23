@@ -1,0 +1,6 @@
+:root {
+  --bg-dark: #0f0f1a;
+  --primary: #ff6f61;
+  --text-light: #ffffff;
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}

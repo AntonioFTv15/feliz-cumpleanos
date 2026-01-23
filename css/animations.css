@@ -1,0 +1,63 @@
+.title {
+  font-size: 3rem;
+  opacity: 0;
+  transform: translateY(40px) scale(0.95);
+  transition: all 1s var(--ease-out);
+}
+
+.title.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+button {
+  margin-top: 30px;
+  padding: 12px 25px;
+  font-size: 18px;
+  background: var(--primary);
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.title {
+  text-shadow:
+    0 0 20px rgba(255, 111, 97, 0.6),
+    0 0 40px rgba(132, 94, 194, 0.4);
+}
+
+.card {
+  margin-top: 30px;
+  padding: 25px 30px;
+  max-width: 320px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  opacity: 0;
+  transform: translateY(20px) scale(0.95);
+  transition: all 0.8s var(--ease-out);
+}
+
+.card.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.card p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-align: center;
+}
+.card p span {
+  display: block;
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeLine 0.8s var(--ease-out) forwards;
+}
+
+@keyframes fadeLine {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

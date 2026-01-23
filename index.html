@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <title>🎉 Birthday Experience</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+<!-- Loader -->
+<section id="loader" class="scene active">
+  <div class="loader-text">Preparando sorpresa…</div>
+</section>
+
+<!-- Countdown -->
+<section id="countdown" class="scene">
+  <h1 id="counter"></h1>
+</section>
+
+<!-- Main Experience -->
+<section id="experience" class="scene">
+  <h1 class="title">🎂 Feliz Cumpleaños</h1>
+  <h2 class="name" id="name"></h2>
+  <button id="giftBtn">🎁 Abrir regalo</button>
+  <div id="card" class="card">
+  <p id="cardMessage"></p>
+</div>
+
+</section>
+
+<canvas id="confetti"></canvas>
+
+<script src="js/config.js"></script>
+<script src="js/loader.js"></script>
+<script src="js/countdown.js"></script>
+<script src="js/experience.js"></script>
+<script src="js/confetti.js"></script>
+
+</body>
+</html>
