@@ -9,6 +9,8 @@
 </head>
 <body>
 
+<audio id="bgMusic" src="assets/audio/Luis Fonsi - Llegaste Tú.mp3" autoplay loop playsinline></audio>
+
 <!-- Loader -->
 <section id="loader" class="scene active">
   <div class="loader-text">Preparando sorpresa…</div>
@@ -44,6 +46,22 @@
 <script src="js/countdown.js"></script>
 <script src="js/experience.js"></script>
 <script src="js/confetti.js"></script>
+<script>
+  // Attempt autoplay, then retry on first user interaction (mobile/browser policies)
+  (function () {
+    const audio = document.getElementById("bgMusic");
+    if (!audio) return;
+    const tryPlay = () => audio.play().catch(() => {});
+    tryPlay();
+    const resume = () => {
+      tryPlay();
+      document.removeEventListener("click", resume, true);
+      document.removeEventListener("touchstart", resume, true);
+    };
+    document.addEventListener("click", resume, true);
+    document.addEventListener("touchstart", resume, true);
+  })();
+</script>
 
 </body>
 </html>
