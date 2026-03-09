@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
-<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>🎉 Birthday Experience</title>
   <link rel="stylesheet" href="css/main.css" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 </head>
 <body>
 
@@ -23,10 +24,17 @@
   <h1 class="title">🎂 Feliz Cumpleaños</h1>
   <h2 class="name" id="name"></h2>
   <button id="giftBtn">🎁 Abrir regalo</button>
+  <div id="photoStack" class="photo-stack">
+    <figure class="photo">
+      <img src="assets/images/Foto_1.jpeg" alt="Foto 1" loading="lazy" />
+    </figure>
+    <figure class="photo">
+      <img src="assets/images/Foto_2.jpeg" alt="Foto 2" loading="lazy" />
+    </figure>
+  </div>
   <div id="card" class="card">
-  <p id="cardMessage"></p>
-</div>
-
+    <p id="cardMessage"></p>
+  </div>
 </section>
 
 <canvas id="confetti"></canvas>

@@ -1,6 +1,13 @@
 :root {
-  --bg-dark: #0f0f1a;
-  --primary: #ff6f61;
+  --bg-dark: #0b101a;
+  --bg-warm: #ffedd5;
+  --primary: #ff6b3d;
+  --primary-dark: #e04524;
+  --accent: #2dd4bf;
   --text-light: #ffffff;
+  --text-dark: #0b101a;
+  --glass: rgba(255, 255, 255, 0.12);
+  --shadow-strong: 0 20px 50px rgba(11, 16, 26, 0.35);
+  --shadow-soft: 0 10px 30px rgba(11, 16, 26, 0.18);
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
 }

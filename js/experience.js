@@ -71,8 +71,12 @@ async function openGift() {
 
   const card = document.getElementById("card");
   const message = document.getElementById("cardMessage");
+  const photos = document.getElementById("photoStack");
 
   card.classList.add("show");
+  if (photos) {
+    photos.classList.add("show");
+  }
   message.innerHTML = "";
 
   const lines = getRandomMessages();
