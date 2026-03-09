@@ -1,4 +1,4 @@
 const CONFIG = {
-  name: "Britney",
+  name: "Nicole",
   countdownSeconds: 3
 };
